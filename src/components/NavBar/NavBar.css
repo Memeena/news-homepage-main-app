@@ -1,0 +1,96 @@
+.menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  /* height: 100vh; */
+}
+/* Position and sizing of burger button */
+.menu-button,
+.menu-close {
+  /* position: fixed; */
+  width: 30px;
+  height: 20px;
+}
+.menu-button {
+  right: 36px;
+  top: 36px;
+  position: fixed;
+  /* z-index: 500; */
+}
+
+.menu-close {
+  align-self: end;
+}
+
+.menu-open {
+  background: white;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+  transition: all 0.8s ease-in;
+  height: 100vh;
+  width: 65vw;
+}
+
+/* Wrapper for item list */
+.menu-list-mobile {
+  color: #b8b7ad;
+  padding: 0.8em;
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+  /* height:; */
+}
+
+/* Individual item */
+.menu-item {
+  display: inline-block;
+  font-size: 2rem;
+  text-decoration: none;
+  color: hsl(236, 13%, 42%);
+  cursor: pointer;
+  transition: all 0.6s ease-out;
+}
+
+.menu-item:hover {
+  color: hsl(35, 77%, 62%);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (min-width: 37.6em) {
+  .menu {
+    position: relative;
+    top: 0;
+    right: 0;
+    /* height: 100vh; */
+  }
+
+  .menu-button,
+  .menu-close {
+    opacity: 0;
+    display: none;
+  }
+
+  .menu-open {
+    height: 1rem;
+    width: auto;
+    background: none;
+    padding: 0;
+    justify-content: center;
+  }
+
+  .menu-list {
+    font-size: 1.15em;
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+  }
+}

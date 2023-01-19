@@ -1,0 +1,39 @@
+.newsElement {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  grid-template-rows: min-content min-content 1fr;
+  column-gap: 2rem;
+  row-gap: 1.5rem;
+  font-family: "Inter", sans-serif;
+}
+
+.img {
+  grid-row: 1/-1;
+  grid-column: 1/2;
+
+  width: 100%;
+}
+
+.id {
+  font-size: 3rem;
+  color: hsl(233, 8%, 79%);
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.heading {
+  font-size: 1.7rem;
+  font-weight: 800;
+  cursor: pointer;
+  transition: all ease-in 0.3s;
+}
+
+.heading:hover {
+  color: hsl(5, 85%, 63%);
+}
+
+.desc {
+  font-size: 1.4rem;
+  color: hsl(236, 13%, 42%);
+  line-height: 2;
+}

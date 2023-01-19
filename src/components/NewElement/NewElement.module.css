@@ -1,0 +1,26 @@
+.newElement {
+  display: grid;
+  grid-template-rows: max-content 1fr;
+  gap: 1rem;
+  padding: 2rem 0;
+}
+
+.newElement:not(:last-child) {
+  border-bottom: 1px solid hsl(236, 13%, 42%);
+}
+
+.heading {
+  font-size: 2rem;
+  cursor: pointer;
+  transition: all ease-in 0.2s;
+}
+
+.heading:hover {
+  color: hsl(35, 77%, 62%);
+}
+
+.desc {
+  font-size: 1.6rem;
+  color: hsl(233, 8%, 79%);
+  line-height: 2;
+}
